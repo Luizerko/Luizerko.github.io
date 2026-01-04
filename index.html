@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Luis Vitor Zerkowski" />
-  <title>Luis Vitor Zerkowski</title>
+  <title>Luis' Website</title>
 
   <style>
     :root{
@@ -15,7 +15,7 @@
       --link:#2563eb;
       --linkHover:#1d4ed8;
       --card:#fafafa;
-      --max:980px;
+      --max:1200px;
       --radius:16px;
     }
     *{box-sizing:border-box;}
@@ -23,11 +23,11 @@
     a{color:var(--link);text-decoration:none;}
     a:hover{color:var(--linkHover);text-decoration:underline;}
 
-    .container{max-width:var(--max);margin:48px auto;padding:0 18px;}
+    .container{max-width:var(--max);margin:48px auto;padding:0 28px;}
 
     .header{
       display:grid;
-      grid-template-columns: 260px 1fr;
+      grid-template-columns: 300px 1fr;
       gap:28px;
       align-items:start;
     }
@@ -44,9 +44,10 @@
       width:100%;
       aspect-ratio: 1 / 1;
       border-radius:12px;
-      object-fit:cover;
+      object-fit:contain;
       border:1px solid var(--border);
       background:#f3f4f6;
+      padding:8px;
       display:block;
     }
     .name{
@@ -80,7 +81,7 @@
     section{margin-bottom:28px;}
     h2{
       margin:0 0 10px;
-      font-size:18px;
+      font-size:32px;
       letter-spacing:-0.01em;
     }
     .card{
@@ -95,9 +96,9 @@
     .items{display:flex;flex-direction:column;gap:14px;}
     .item{
       display:grid;
-      grid-template-columns: 140px 1fr;
+      grid-template-columns: 1fr;
       gap:14px;
-      padding:14px;
+      padding:18px;
       border:1px solid var(--border);
       border-radius:14px;
       background:linear-gradient(180deg, #fff, #fbfbfb);
@@ -110,8 +111,8 @@
       border:1px solid var(--border);
       background:#f3f4f6;
     }
-    .meta{font-size:13px;color:var(--muted);margin-top:2px;}
-    .title{font-weight:700;line-height:1.3;margin:0;}
+    .meta{font-size:14px;color:var(--muted);margin-top:2px;}
+    .title{font-weight:800;line-height:1.25;margin:0;font-size:17px;}
     .links{margin-top:8px;font-size:14px;}
     .links a{margin-right:10px;}
 
@@ -144,7 +145,8 @@
         <img class="avatar" src="assets/profile_pic.png" alt="Profile photo" />
 
         <div class="name">LUIS VITOR ZERKOWSKI</div>
-        <p class="role">MSc in AI - University of Amsterdam</p>
+        <p class="role">MSc in AI from the University of Amsterdam</p>
+        <p class="role">BSc in Comp. Sci. from the University of São Paulo</p>
 
         <nav class="icons" aria-label="Links">
           <a class="icon-btn" href="mailto:luisvz@gmail.com" aria-label="Email">
@@ -174,10 +176,10 @@
           <h2>About Me</h2>
           <div class="card">
             <p>
-              My name is Luis Vitor Zerkowski and I'm a MSc in Artificial Intelligence with a few years of hands-on experience building end-to-end machine learning pipelines. My focus lies in Computer Vision and Interdisciplinary AI, where I enjoy turning innovative and creative ideas into prototypes. As you'll probably be able to tell by my repos, I'm a huge fan of documentation as a form of share lessons learned and as a pedagogical guide to my code. I also love collaborating in diverse and enthusiastic team environments and I'm a bit of math enthusiast. Lastly, I deeply believe in the power of shared knowledge and continuous learning. Whether through code, writing, or conversation, I always want to contribute and grow with the community 😁
+              My name is Luis Vitor Zerkowski and I'm a MSc in Artificial Intelligence with a few years of hands-on experience building end-to-end machine learning pipelines. My focus lies in Computer Vision and Interdisciplinary AI, where I enjoy turning innovative and creative ideas into prototypes. As you'll probably be able to tell by my repos, I'm a huge fan of documentation as a form of share lessons learned and as a pedagogical guide to my code. I also love collaborating in diverse and enthusiastic team environments and I'm a bit of math enthusiast. Lastly, I deeply believe in the power of shared knowledge and continuous learning. Whether through code, writing, or conversation, I always want to contribute and grow with the community.
             </p>
-            <p class="muted">
-              I'm currently looking for an opportunity to do some Computer Vision Research at a cool place. If you have something in mind for me, please reach out!
+            <p>
+              I'm currently looking for an opportunity to do some Computer Vision Research at a cool place. If you have something in mind for me, please reach out 😁
             </p>
           </div>
         </section>
@@ -237,7 +239,7 @@
           <div class="card">
             <ul style="margin:0;padding-left:18px;line-height:1.8;">
               <li>
-                <strong>Paper Presentation</strong> - ICCC'25 - Campinas, Brazil - 2025 - <a href="https://www.youtube.com/watch?v=3VcjcrfwuOg&t=3100s">video</a>
+                <strong><a href="https://www.youtube.com/watch?v=3VcjcrfwuOg&t=3100s">Paper Presentation</a></strong> - ICCC'25 - Campinas, Brazil - 2025
               </li>
               <li>
                 <strong>Guest Lecture: AI for Architecture</strong> - Bachelor of Engineering in Civil Engineering, Senai CIMATEC - Salvador, Brazil - 2021
